@@ -1,0 +1,76 @@
+body {
+	font-family verdana;
+}
+
+#title {
+	box-shadow 1px 1px 5px #888;
+	text-shadow 0.1em 0.1em 0.2em black;
+	border-radius 3px;
+	color whitesmoke;
+	background-color #C3D9FF;
+	padding 0px 10px 0px 10px;
+	margin 10px;
+	text-align center;
+}
+
+#totalclicks {
+	vertical-align bottom;
+	padding 10px;
+}
+
+#loginname {
+	cursor pointer;
+}
+
+#space, #stats{
+	margin 25px 10px 10px 10px;
+}
+
+#numsets, #cardsperset {
+	width 25px;
+}
+
+#controls{
+	background-color whitesmoke;
+	border 2px solid #aaa;
+	padding 10px;
+	margin 10px;
+}
+
+.card {
+	box-shadow 1px 1px 5px #888;
+	border 1px solid #C3D9FF;
+	border-radius 10px;
+	background-color white;
+	width 100px;
+	height 169px;
+	margin 10px 10px;
+	cursor pointer;
+}
+.card span {
+	display none;
+}
+.card.selected {
+	background-color lightyellow;
+	box-shadow 5px 5px 5px #888;
+}
+.card.matched {
+	background-color #CDEB8B;
+	box-shadow 5px 5px 5px #888;
+}
+.card.selected span, .card.matched span {
+	font-family wingdings;
+	font-size 28pt;
+	font-weight bold;
+	color #888;
+	text-shadow 0.1em 0.1em 0.2em #aaa;
+	text-align center;
+	width 100%;
+	line-height 169px;
+	display block;
+	float left;
+}
+
+.inline {
+	display inline-block;
+}

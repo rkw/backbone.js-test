@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+        <title>Backbone Test</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore-min.js"></script> 
+        <script type="text/javascript" src="http://documentcloud.github.com/backbone/backbone-min.js"></script> 
+
+		<script type="text/javascript" src="bbtest.js"></script>
+        <script type="text/javascript" src="card.js"></script>
+        <link type="text/css" rel="stylesheet" href="style.css" >
+    </head>
+
+	<body>
+    	<div id='app'>
+    	
+    		<div id='title' class='inline'>
+    			<h1 id='loginname'>{name}</h1>
+    		</div>
+    		
+    		<div id='totalclicks' class='inline'>
+    		</div>
+    		
+    		<div id='controls'>
+    			<input id='startgame' type='button' value='Start Game' /> with <input id='numsets' value='5' type='text' /> sets / <input id='cardsperset' value='2' type='text' /> cards per set.
+    		</div>
+    		
+    		<div id='space'>
+    		</div>
+    		
+    		<div id='stats'>
+    		</div>
+		</div>
+
+	    <!-- Templates --> 
+	 
+	    <script type='text/template' id='card-template'> 
+	    	<div class='card inline <%= selected ? "selected" : "" %> <%= matched ? "matched" : "" %>'>
+      			<span><%= value %></span>
+  			</div>
+	    </script> 
+	 
+	    <script type='text/template' id='stats-template'> 
+	      	<span><%= total %> cards total.</span>
+	      	<span><%= matched %> cards matched.</span>
+	      	<span><%= remaining %> cards remaining.</span>
+	    </script> 
+	</body>
+
+</html>

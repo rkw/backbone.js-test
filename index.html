@@ -6,7 +6,7 @@
         <script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore-min.js"></script> 
         <script type="text/javascript" src="http://documentcloud.github.com/backbone/backbone-min.js"></script> 
 
-		<script type="text/javascript" src="bbtest.js"></script>
+	<script type="text/javascript" src="bbtest.js"></script>
         <script type="text/javascript" src="card.js"></script>
         <link type="text/css" rel="stylesheet" href="style.css" >
     </head>
@@ -32,19 +32,19 @@
     		</div>
 		</div>
 
-	    <!-- Templates --> 
-	 
-	    <script type='text/template' id='card-template'> 
-	    	<div class='card inline <%= selected ? "selected" : "" %> <%= matched ? "matched" : "" %>'>
-      			<span><%= value %></span>
-  			</div>
-	    </script> 
-	 
-	    <script type='text/template' id='stats-template'> 
-	      	<span><%= total %> cards total.</span>
-	      	<span><%= matched %> cards matched.</span>
-	      	<span><%= remaining %> cards remaining.</span>
-	    </script> 
+		<!-- Templates --> 
+		
+		<script type='text/template' id='card-template'> 
+		   	 <div class='card inline <%= selected ? "selected" : "" %> <%= matched ? "matched" : "" %>'>
+		      		<span><%= value %></span>
+			</div>
+		</script> 
+		
+		<script type='text/template' id='stats-template'> 
+			<span><%= total %> cards total.</span>
+			<span><%= matched %> cards matched.</span>
+			<span><%= remaining %> cards remaining.</span>
+		</script> 
 	</body>
 
 </html>

@@ -68,7 +68,7 @@ $(function() {
 		
 		hasMatch: function() {
 			var selectedcards = this.selected();
-			var values = selectedcards.map(function(card) {
+			var values = _.map(selectedcards, function(card) {
 				return card.get('value'); 
 			});
 			if ( ($('#cardsperset').val() == selectedcards.length) && (1 == _.uniq(values).length) ) {
@@ -146,7 +146,7 @@ $(function() {
 			$('#numsets').val(numsets);
 			var cardsperset = (parseInt($('#cardsperset').val()) || 2);
 			$('#cardsperset').val(cardsperset);
-			var availcards = _.range(numsets*cardsperset).map(function(n) { return n -= n%cardsperset });
+			var availcards = _.map(_.range(numsets*cardsperset), function(n) { return n -= n%cardsperset });
 			for (i=0; i < numsets*cardsperset; i++) {
 				var cardvalue = availcards.splice(
 					Math.floor( Math.random()*availcards.length ),	1
